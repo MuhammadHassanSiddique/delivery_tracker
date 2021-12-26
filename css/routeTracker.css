@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #fff; */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.border-none {
+  border-right: none !important;
+}
+
+#main {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#main .innerContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#main .innerContainer .topInnerContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+#main .innerContainer .topInnerContainer .heading {
+  color: red;
+  font-size: 72px;
+  text-align: center;
+}
+
+#main .innerContainer .topInnerContainer .trackInput {
+  display: flex;
+  gap: 20px;
+}
+
+#main .innerContainer .topInnerContainer .trackInput input[type="text"] {
+  width: 400px;
+  padding: 15px;
+}
+
+#main .innerContainer .topInnerContainer .trackInput input[type="text"]:focus {
+  outline: none;
+}
+
+#main .innerContainer .topInnerContainer .trackInput input[type="button"] {
+  width: 20%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgb(63, 209, 253);
+  border: none;
+  border-radius: 5px;
+}
+
+#main .innerContainer .topInnerContainer .trackDisplay {
+  min-height: 400px;
+  min-width: 600px;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#main .innerContainer .topInnerContainer .subHeading {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main .innerContainer .topInnerContainer #trackingDetail {
+  background: #282828;
+  border-radius: 5px;
+  opacity: 0.9;
+  height: 90%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+#main .innerContainer .topInnerContainer #trackingDetail .detail {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+#main .innerContainer .topInnerContainer #trackingDetail .detail .detailHead {
+  color: #9f9e9e;
+  font-weight: bold;
+}
+
+#main .innerContainer .topInnerContainer #trackingDetail .detail .tracker_item {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#main .innerContainer .topInnerContainer #clearButton {
+  padding: 10px 35px;
+  background: yellow;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .innerContainer .bottomInnerContainer {
+  width: 100%;
+  padding: 100px;
+}
+
+#main .innerContainer .bottomInnerContainer table {
+  background-color: #282828;
+  border-radius: 5px;
+  color: #9f9e9e;
+  width: 100%;
+}
+
+#main .innerContainer .bottomInnerContainer table .small-container {
+  width: 15%;
+}
+
+#main .innerContainer .bottomInnerContainer table .large-container {
+  width: 50%;
+}
+
+#main .innerContainer .bottomInnerContainer table .medium-container {
+  width: 35%;
+}
+
+#main .innerContainer .bottomInnerContainer table th {
+  border-right: 2px solid #9f9e9e;
+  padding: 15px;
+}
+
+#main .innerContainer .bottomInnerContainer table tbody tr {
+  background: #787878;
+  color: #2e2e2e;
+}
+
+#main .innerContainer .bottomInnerContainer table tbody tr:nth-child(even) {
+  background: #dbdddb;
+}
+
+#main .innerContainer .bottomInnerContainer table td {
+  text-align: center;
+  border-top: 2px solid #9f9e9e;
+  border-right: 2px solid #9f9e9e;
+  padding: 15px;
+}

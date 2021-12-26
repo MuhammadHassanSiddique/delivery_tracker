@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/routeTracker.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="innerContainer">
+        <div class="topInnerContainer">
+          <h1 class="heading">Delivery Tracker</h1>
+          <div class="trackInput">
+            <input
+              type="text"
+              id="trackerInput"
+              placeholder="Enter your tracking number"
+              class="input"
+            />
+            <input
+              type="button"
+              value="Track"
+              id="trackerButton"
+              class="btn-submit"
+            />
+          </div>
+          <div class="trackDisplay">
+            <h2 class="subHeading">Tracking Details</h2>
+            <div id="trackingDetail">
+              <div class="detail">
+                <span class="detailHead">Tracking No:</span
+                ><span id="tracking_number" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">Origin:</span
+                ><span id="tracking_origin" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">Destination:</span
+                ><span id="tracking_destination" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">ShipmentType:</span
+                ><span id="tracking_shipment" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">Description:</span
+                ><span id="tracking_description" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">No of Items:</span
+                ><span id="tracking_items" class="tracker_item"></span>
+              </div>
+              <div class="detail">
+                <span class="detailHead">Weight:</span
+                ><span id="tracking_weight" class="tracker_item"></span>
+              </div>
+            </div>
+          </div>
+          <input type="button" value="Clear" id="clearButton" />
+        </div>
+        <div class="bottomInnerContainer">
+          <table>
+            <thead>
+              <tr>
+                <th class="small-container">#</th>
+                <th class="large-container">Tracking Number</th>
+                <th class="medium-container border-none">Description</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/routeTracker.js"></script>
+  </body>
+</html>
