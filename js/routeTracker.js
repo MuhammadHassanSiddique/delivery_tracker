@@ -1,7 +1,7 @@
 ("use strict",
 () => {
   const http = new XMLHttpRequest();
-  const URL = "../data/data.json";
+  const URL = "https://muhammadhassansiddique.github.io/delivery_tracker/data/data.json";
 
   let DATA = [];
 
